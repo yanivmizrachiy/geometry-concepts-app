@@ -1,3 +1,4 @@
+import './print.css';
 
 import React from 'react';
 import { 
@@ -226,3 +227,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
