@@ -1,4 +1,3 @@
-import './print.css';
 
 import React from 'react';
 import { 
@@ -90,12 +89,13 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-100 py-8 no-print-bg">
       <button
         onClick={handlePrint}
-        className="no-print fixed bottom-10 left-10 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 z-50 flex items-center gap-3"
+        title="לחץ כאן כדי לשמור כקובץ PDF או להדפיס את הסיכום"
+        className="no-print fixed bottom-10 left-10 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 z-50 flex items-center gap-3 border-2 border-white/20"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
         </svg>
-        הדפס סיכום מעוצב
+        הורד כקובץ PDF / הדפס
       </button>
 
       {/* עמוד 1 */}
@@ -227,4 +227,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-

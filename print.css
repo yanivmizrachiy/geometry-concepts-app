@@ -1,7 +1,0 @@
-.print-button{padding:.4rem .9rem;border-radius:4px;border:1px solid #ccc;background:#fff;cursor:pointer}
-@page{size:A4;margin:12mm}
-@media print{
-.no-print,.print-button{display:none!important}
-body{direction:rtl;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.page-break{page-break-after:always;box-shadow:none;border:none}
-}
